@@ -1,6 +1,9 @@
-@import 'variables';
-@import 'default';
-@import 'utilities';
-@import 'header';
-@import 'navbar';
-@import 'media-query';
+@import 'utilities/variables';
+
+@import 'base/default';
+
+@import 'layout/header';
+@import 'layout/navbar';
+@import 'layout/main';
+@import 'components/list';
+@import 'layout/media-query';
