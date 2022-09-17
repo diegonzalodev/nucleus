@@ -61,6 +61,15 @@
       column-gap: 7rem;
     }
   }
+
+  .seguridad {
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      column-gap: 7rem;
+    }
+  }
 }
 
 @media (min-width: 992px) {

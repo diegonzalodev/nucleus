@@ -1,0 +1,39 @@
+.seguridad {
+  background-color: $primary-color;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    background-color: $secondary-color;
+    content: '';
+    width: 120%;
+    height: 20rem;
+    position: absolute;
+    top: -10rem;
+    left: 0;
+    transform: rotate(3deg);
+  }
+  &::after {
+    background-color: $secondary-color;
+    content: '';
+    width: 120%;
+    height: 20rem;
+    position: absolute;
+    bottom: -10rem;
+    left: 0;
+    transform: rotate(-3deg);
+  }
+  &__container {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  &__title {
+    color: $secondary-color;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+}
