@@ -88,6 +88,12 @@
     }
   }
 
+  .testimoniales {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   .list {
     &__container {
       &--column {
