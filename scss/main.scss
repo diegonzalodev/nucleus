@@ -2,12 +2,15 @@
 
 @import 'base/default';
 
+@import 'components/list';
+@import 'components/testimony';
+
 @import 'layout/header';
 @import 'layout/navbar';
 @import 'layout/main';
-@import 'components/list';
 @import 'layout/section-seguridad';
 @import 'layout/section-comisiones';
-@import 'layout/section-testimoniales';
-@import 'components/testimony';
+@import 'layout/section-testimonios';
+@import 'layout/footer';
+
 @import 'layout/media-queries';

@@ -88,7 +88,19 @@
     }
   }
 
-  .testimoniales {
+  .footer {
+    &__logo {
+      margin: 0;
+    }
+    &__grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+  }
+
+  .testimonios {
     &__grid {
       grid-template-columns: repeat(2, 1fr);
     }

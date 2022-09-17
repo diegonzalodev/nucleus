@@ -43,6 +43,56 @@ ul {
   ul li {
     display: inline-block; }
 
+.list__container {
+  background-color: #FFF;
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  margin-bottom: 5rem;
+  transition-property: transform;
+  transition-duration: .3s; }
+  .list__container--column {
+    margin-right: 3rem;
+    margin-left: 3rem; }
+
+.list__stat {
+  display: block;
+  color: #6834a6;
+  margin: 0;
+  font-size: 6rem;
+  font-weight: 900;
+  text-align: center; }
+
+.list__title {
+  color: #6834a6;
+  margin: 0;
+  font-size: 2.5rem; }
+
+.list__paragraph {
+  margin: 0;
+  font-size: 1.5rem; }
+
+.testimony {
+  background-color: #FFF;
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+  padding: 2rem; }
+  .testimony__opinion {
+    padding-left: 4rem; }
+    .testimony__opinion::before {
+      content: '';
+      width: 3rem;
+      height: 3rem;
+      background-image: url(../img/comilla.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 3rem;
+      position: absolute;
+      top: 3rem;
+      left: 2rem; }
+  .testimony__author {
+    color: #6834a6;
+    font-weight: 700;
+    text-align: right; }
+
 .header {
   background-image: url(../img/header_bg.svg);
   background-position: top right;
@@ -77,6 +127,8 @@ ul {
 
 .navbar__link {
   color: #6834a6; }
+  .navbar__link--footer {
+    color: #FFF; }
 
 .nucleus {
   margin-top: 3rem; }
@@ -90,34 +142,6 @@ ul {
   .nucleus__grid {
     display: flex;
     flex-direction: column-reverse; }
-
-.list__container {
-  background-color: #FFF;
-  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
-  padding: 2rem;
-  margin-bottom: 5rem;
-  transition-property: transform;
-  transition-duration: .3s; }
-  .list__container--column {
-    margin-right: 3rem;
-    margin-left: 3rem; }
-
-.list__stat {
-  display: block;
-  color: #6834a6;
-  margin: 0;
-  font-size: 6rem;
-  font-weight: 900;
-  text-align: center; }
-
-.list__title {
-  color: #6834a6;
-  margin: 0;
-  font-size: 2.5rem; }
-
-.list__paragraph {
-  margin: 0;
-  font-size: 1.5rem; }
 
 .seguridad {
   background-color: #6834a6;
@@ -163,43 +187,33 @@ ul {
   font-weight: 700;
   text-align: center; }
 
-.testimoniales {
+.testimonios {
   background-color: #6834a6;
   padding-top: 5rem;
   padding-bottom: 5rem; }
-  .testimoniales__container {
+  .testimonios__container {
     width: 90%;
     max-width: 120rem;
     margin: 0 auto; }
-  .testimoniales__title {
+  .testimonios__title {
     color: #FFF;
     text-align: center; }
-  .testimoniales__grid {
+  .testimonios__grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 4rem; }
 
-.testimony {
-  background-color: #FFF;
-  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
-  padding: 2rem; }
-  .testimony__opinion {
-    padding-left: 4rem; }
-    .testimony__opinion::before {
-      content: '';
-      width: 3rem;
-      height: 3rem;
-      background-image: url(../img/comilla.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 3rem;
-      position: absolute;
-      top: 3rem;
-      left: 2rem; }
-  .testimony__author {
-    color: #6834a6;
-    font-weight: 700;
-    text-align: right; }
+.footer {
+  background-color: #5A30A0;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .footer__container {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto; }
+  .footer__logo {
+    width: 20rem;
+    margin: 0 auto 4rem auto; }
 
 @media (hover: hover) {
   .list__container:hover {
@@ -256,7 +270,13 @@ ul {
     column-gap: 7rem; }
   .comisiones__subtitle {
     text-align: left; }
-  .testimoniales__grid {
+  .footer__logo {
+    margin: 0; }
+  .footer__grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .testimonios__grid {
     grid-template-columns: repeat(2, 1fr); }
   .list__container--column {
     margin-right: 0;
