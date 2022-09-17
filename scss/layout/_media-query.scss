@@ -70,12 +70,53 @@
       column-gap: 7rem;
     }
   }
+
+  .comisiones {
+    &__container {
+      width: 90%;
+      max-width: 120rem;
+      margin: 0 auto;
+    }
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: flex-end;
+      column-gap: 7rem;
+    }
+    &__subtitle {
+      text-align: left;
+    }
+  }
+
+  .list {
+    &__container {
+      &--column {
+        margin-right: 0;
+        margin-left: 0%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 5rem;
+      }
+    }
+    &__stat {
+      flex-basis: 20rem;
+      font-size: 4rem;
+      text-align: center;
+    }
+  }
 }
 
 @media (min-width: 992px) {
   .header {
     background-size: 60rem;
   }
+
+  .comisiones {
+    &__grid {
+      align-items: center;
+    }
+  } 
 }
 
 @media (min-width: 1280px) {

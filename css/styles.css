@@ -98,6 +98,17 @@ ul {
   margin-bottom: 5rem;
   transition-property: transform;
   transition-duration: .3s; }
+  .list__container--column {
+    margin-right: 3rem;
+    margin-left: 3rem; }
+
+.list__stat {
+  display: block;
+  color: #6834a6;
+  margin: 0;
+  font-size: 6rem;
+  font-weight: 900;
+  text-align: center; }
 
 .list__title {
   color: #6834a6;
@@ -143,6 +154,15 @@ ul {
     margin-bottom: 5rem;
     text-align: center; }
 
+.comisiones__title {
+  margin-bottom: 5rem;
+  text-align: center; }
+
+.comisiones__subtitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center; }
+
 @media (hover: hover) {
   .list__container:hover {
     transform: scale(1.1); } }
@@ -186,11 +206,35 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    column-gap: 7rem; } }
+    column-gap: 7rem; }
+  .comisiones__container {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto; }
+  .comisiones__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-end;
+    column-gap: 7rem; }
+  .comisiones__subtitle {
+    text-align: left; }
+  .list__container--column {
+    margin-right: 0;
+    margin-left: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5rem; }
+  .list__stat {
+    flex-basis: 20rem;
+    font-size: 4rem;
+    text-align: center; } }
 
 @media (min-width: 992px) {
   .header {
-    background-size: 60rem; } }
+    background-size: 60rem; }
+  .comisiones__grid {
+    align-items: center; } }
 
 @media (min-width: 1280px) {
   .header {

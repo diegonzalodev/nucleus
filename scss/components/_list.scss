@@ -6,6 +6,18 @@
     margin-bottom: 5rem;
     transition-property: transform;
     transition-duration: .3s;
+    &--column {
+      margin-right: 3rem;
+      margin-left: 3rem;
+    }
+  }
+  &__stat {
+    display: block;
+    color: $primary-color;
+    margin: 0;
+    font-size: 6rem;
+    font-weight: 900;
+    text-align: center;
   }
   &__title {
     color: $primary-color;
